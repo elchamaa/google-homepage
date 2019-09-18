@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: arial, sans-serif;
+}
+ #nav {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 13px;
+}
+
+.nav-item {
+    padding-top: 10px;
+    padding-right:15px;
+}
+
+#wrapper {
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+.query input {
+    padding: 10px 100px;
+    border-radius: 10px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 
+}
+
