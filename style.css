@@ -67,11 +67,118 @@ a.avatar {
     flex-flow: column wrap;
 }
 
+/* Search Bar Styling */
 
-.query input {
-    padding: 10px 100px;
-    border-radius: 10px;
+#query {
+    width: 53%;
+    height: 8%;
+    max-width: 482px;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin-top: 20px;
+    }
+
+#query:hover, #query:focus-within {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
 }
+
+.container {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    height: 100%;
+}
+ 
+.query-container {
+    flex: 1;
+    display: flex;
+    height: 32px;
+}
+.query {
+    border: none;
+    flex-grow: 1;
+    outline: none;
+    font: 16px arial,sans-serif;
+    line-height: 34px;
+    color: rgba(0,0,0,.87);
+}
+
+.mic {
+    background-image: url('mic.png');
+    background-size: 24px;
+    height: 24px;
+    width: 24px;
+}
+
+.loupe {
+    width: 20px;
+    padding-right:10px;
+    opacity: 0.55;
+}
+
+/* Test out */
+
+.query:before {
+    background-image: url(icons.png);
+    background-size: 528px;
+    background-position: 224px 223px;
+    height: 32px;
+    width: 32px;
+}
+
+
+
+
+/* Search CTAs */
+
+.search {
+    padding-top: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    cursor: pointer;
+    font-family: arial,sans-serif;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+    line-height: 27px;
+    height: 36px;
+}
+
+button:hover {
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+/* Languages */
+
+.also {
+    padding-top: 20px;
+}
+.also a {
+    color: #1a0dab;
+    padding-right: 5px;
+}
+.also a:visited {
+    color: #609;
+}
+
+
+
+/* Footer Styling */
 
 #footer {
     position: absolute;
@@ -96,5 +203,5 @@ a.avatar {
 .footer2 a {
     padding-right: 23px;
     color: rgb(95, 99, 104);
-
 }
+
