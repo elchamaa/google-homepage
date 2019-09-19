@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
 }
 
 
@@ -72,6 +72,13 @@ a.avatar {
 
 .logo {
     padding-top: 52px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
 }
 
 /* Search Bar Styling */
@@ -83,7 +90,9 @@ a.avatar {
     border: 1px solid #dfe1e5;
     box-shadow: none;
     border-radius: 24px;
-    margin-top: 33px;
+    margin-top: 3%;
+    flex: 1 0 30px;
+    max-height: 40px;
     }
 
 #query:hover, #query:focus-within {
@@ -102,14 +111,14 @@ a.avatar {
 .query-container {
     flex: 1;
     display: flex;
-    height: 30px;
+    max-height: 30px;
 }
 .query {
     border: none;
     flex-grow: 1;
     outline: none;
     font: 16px arial,sans-serif;
-    line-height: 34px;
+    line-height: 25px;
     color: rgba(0,0,0,.87);
 }
 
@@ -132,7 +141,7 @@ a.avatar {
 /* Search CTAs */
 
 .search {
-    padding-top: 20px;
+    padding-top: 2%;
 }
 
 button {
@@ -183,6 +192,39 @@ button:hover {
     width: 100%;
     background-color: rgb(242, 242, 242);
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    footer {
+        display: none;
+    }
+    .also {
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    .logo img {
+        width: 70%;
+        height: auto;
+
+    }
+
+  }
+  @media only screen and (max-height: 550px) {
+    /* For mobile phones: */
+    footer {
+        display: none;
+    }
+    .also {
+        display: none;
+    }
+    .logo img {
+        width: 70%;
+        height: auto;
+
+    }
+  }
 
 .footer1 {
   padding: 13px 30px;
